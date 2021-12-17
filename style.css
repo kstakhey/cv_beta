@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 650px;
+  margin: 0 auto;
+  background: linear-gradient(
+    180deg,
+    rgba(3, 56, 244, 0.71) 0%,
+    rgba(224, 37, 206, 0.79) 93.75%
+  );
+  padding: 10px 14px;
+}
+
+.about {
+  max-width: 296px;
+  background-color: rgba(196, 196, 196, 0.3);
+  border-radius: 10px;
+  padding: 10px 17px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.ava {
+  width: 110px;
+  height: 116px;
+  background: no-repeat url("./ava.jpg");
+  border-radius: 50%;
+}
+
+.name {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+}
+.firstname {
+  font-size: 25px;
+  color: #cecaca;
+  margin-bottom: 5px;
+}
+
+.surname {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.prof {
+  font-size: 15px;
+  color: #cecaca;
+}
+
+.about__info_wrapper {
+  display: flex;
+  max-width: 260px;
+  background: rgba(196, 196, 196, 0.35);
+  border-radius: 10px;
+  margin-bottom: 6px;
+  color: #fff;
+  font-family: "Calibri", sans-serif;
+  padding: 7px 14px;
+  font-size: 15px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.skill {
+  max-width: 321px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 14px;
+}
+.skill-block__header {
+  display: flex;
+}
+.skill-block__header__name {
+  background-color: #545454;
+  border-radius: 5px;
+  color: #fff;
+  padding: 3px 30px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.skill-block__header__line {
+  width: 141px;
+  height: 1px;
+  background-color: #545454;
+  align-self: center;
+}
+
+.skill-block__lang {
+  padding: 18px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* circle diagram copied from https://ru.stackoverflow.com/ */
+
+.circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.outer {
+  background-color: #3b5999;
+}
+.outer__html {
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 100%,
+    0 0,
+    0 0,
+    50% 50%,
+    50% 50%
+  );
+}
+
+.outer__css {
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 100%,
+    0 50%,
+    0 50%,
+    50% 50%,
+    50% 50%
+  );
+}
+
+.outer__js {
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 100%,
+    0 100%,
+    0 100%,
+    50% 50%,
+    50% 50%
+  );
+}
+
+.inner {
+  background-color: #e0e0e0;
+  display: flex;
+}
+
+.inner__html {
+  transform: scale(0.85);
+}
+.inner img {
+  align-self: center;
+  margin: 0 auto;
+}
